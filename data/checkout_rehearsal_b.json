@@ -1,0 +1,38 @@
+[
+  {
+    "source_system": "checkout",
+    "record_id": "CHK-B-001",
+    "checkout_id": "CHK-B-001",
+    "rehearsal": "B",
+    "product_id": "PROD-SLATE",
+    "product_name": "Slate Cotton Sheet Set",
+    "discount_code": "WEEKEND20",
+    "observed_at": "2026-11-27T09:05:00-05:00",
+    "before_price": 100.00,
+    "after_price": 80.00
+  },
+  {
+    "source_system": "checkout",
+    "record_id": "CHK-B-002",
+    "checkout_id": "CHK-B-002",
+    "rehearsal": "B",
+    "product_id": "PROD-SAND",
+    "product_name": "Sand Cotton Sheet Set",
+    "discount_code": "WEEKEND20",
+    "observed_at": "2026-11-27T09:06:00-05:00",
+    "before_price": 120.00,
+    "after_price": 96.00
+  },
+  {
+    "source_system": "checkout",
+    "record_id": "CHK-B-003",
+    "checkout_id": "CHK-B-003",
+    "rehearsal": "B",
+    "product_id": "PROD-PILLOWCASE",
+    "product_name": "Pillowcase Set",
+    "discount_code": "WEEKEND20",
+    "observed_at": "2026-11-27T08:40:00-05:00",
+    "before_price": 40.00,
+    "after_price": 40.00
+  }
+]

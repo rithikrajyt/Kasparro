@@ -1,0 +1,16 @@
+{
+  "source_system": "klaviyo",
+  "record_id": "CAMP-001",
+  "campaign_id": "CAMP-001",
+  "updated_at": "2026-11-26T17:00:00-05:00",
+  "email_copy": "Get 20% off Slate and Sand Cotton Sheet Sets with WEEKEND20 through Sunday at 11:59 p.m. ET.",
+  "discount_code_in_email": "WEEKEND20",
+  "discount_percent_claimed": 20,
+  "products_mentioned": [
+    {"product_id": "PROD-SLATE", "name": "Slate Cotton Sheet Set"},
+    {"product_id": "PROD-SAND", "name": "Sand Cotton Sheet Set"}
+  ],
+  "scheduled_at": "2026-11-27T09:15:00-05:00",
+  "main_link_product_id": "PROD-SLATE",
+  "main_link_product_name": "Slate Cotton Sheet Set"
+}

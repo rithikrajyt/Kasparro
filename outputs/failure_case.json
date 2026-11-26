@@ -1,0 +1,225 @@
+{
+  "run_id": "RUN-C9687A0B",
+  "founder_question": "Are we ready to send?",
+  "offer_id": "WEEKEND20",
+  "rehearsal": "B",
+  "simulate_failure": true,
+  "recommendation": "NEEDS VERIFICATION",
+  "evaluation_started_at": "2026-11-27T09:10:00-05:00",
+  "run_completed_at": "2026-11-26T12:40:22.764454-05:00",
+  "freshness_threshold_minutes": 10,
+  "summary": {
+    "total_checks": 15,
+    "passed": 14,
+    "failed": 0,
+    "unverified": 1
+  },
+  "checks": [
+    {
+      "check_id": "offer_exists",
+      "name": "Approved offer has all required fields",
+      "status": "PASS",
+      "expected": "All present",
+      "actual": "All present",
+      "evidence_id": "OFFER-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "code_match_shopify",
+      "name": "Shopify discount code matches approved offer",
+      "status": "PASS",
+      "expected": "WEEKEND20",
+      "actual": "WEEKEND20",
+      "evidence_id": "DISC-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "code_match_klaviyo",
+      "name": "Klaviyo email code matches approved offer",
+      "status": "PASS",
+      "expected": "WEEKEND20",
+      "actual": "WEEKEND20",
+      "evidence_id": "CAMP-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "discount_pct_shopify",
+      "name": "Shopify discount % matches approved offer",
+      "status": "PASS",
+      "expected": "20%",
+      "actual": "20%",
+      "evidence_id": "DISC-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "discount_pct_klaviyo",
+      "name": "Klaviyo claimed % matches approved offer",
+      "status": "PASS",
+      "expected": "20%",
+      "actual": "20%",
+      "evidence_id": "CAMP-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "shopify_active",
+      "name": "Shopify discount is active",
+      "status": "PASS",
+      "expected": "active",
+      "actual": "active",
+      "evidence_id": "DISC-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "eligible_match",
+      "name": "Shopify eligible products match approved offer",
+      "status": "PASS",
+      "expected": [
+        "PROD-SAND",
+        "PROD-SLATE"
+      ],
+      "actual": [
+        "PROD-SAND",
+        "PROD-SLATE"
+      ],
+      "evidence_id": "DISC-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "excluded_match",
+      "name": "Shopify excluded products match approved offer",
+      "status": "PASS",
+      "expected": [
+        "PROD-PILLOWCASE"
+      ],
+      "actual": [
+        "PROD-PILLOWCASE"
+      ],
+      "evidence_id": "DISC-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "promo_times",
+      "name": "Shopify promotion times match approved offer",
+      "status": "PASS",
+      "expected": "2026-11-27T09:00:00-05:00 \u2014 2026-11-29T23:59:00-05:00",
+      "actual": "2026-11-27T09:00:00-05:00 \u2014 2026-11-29T23:59:00-05:00",
+      "evidence_id": "DISC-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "email_products",
+      "name": "Email product coverage matches eligible products",
+      "status": "PASS",
+      "expected": [
+        "PROD-SAND",
+        "PROD-SLATE"
+      ],
+      "actual": [
+        "PROD-SAND",
+        "PROD-SLATE"
+      ],
+      "evidence_id": "CAMP-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "email_link",
+      "name": "Email main link targets an eligible product",
+      "status": "PASS",
+      "expected": "Eligible product",
+      "actual": "PROD-SLATE (eligible)",
+      "evidence_id": "CAMP-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "email_schedule",
+      "name": "Email scheduled within promotion window",
+      "status": "PASS",
+      "expected": "2026-11-27T09:00:00-05:00 \u2014 2026-11-29T23:59:00-05:00",
+      "actual": "2026-11-27T09:15:00-05:00",
+      "evidence_id": "CAMP-001",
+      "evidence_timestamp": null
+    },
+    {
+      "check_id": "checkout_PROD-PILLOWCASE",
+      "name": "Checkout price for Pillowcase Set",
+      "status": "UNVERIFIED",
+      "expected": "Fresh evidence",
+      "actual": "Stale (observed 2026-11-27T08:40:00-05:00)",
+      "evidence_id": "CHK-B-003",
+      "evidence_timestamp": "2026-11-27T08:40:00-05:00",
+      "explanation": "Stale evidence at 2026-11-27T08:40:00-05:00; fresh checkout unavailable after retry. Cannot confirm current price."
+    },
+    {
+      "check_id": "checkout_PROD-SAND",
+      "name": "Checkout price for Sand Cotton Sheet Set",
+      "status": "PASS",
+      "expected": "20% off",
+      "actual": "20.0% off ($120.0\u2192$96.0)",
+      "evidence_id": "CHK-B-002",
+      "evidence_timestamp": "2026-11-27T09:06:00-05:00"
+    },
+    {
+      "check_id": "checkout_PROD-SLATE",
+      "name": "Checkout price for Slate Cotton Sheet Set",
+      "status": "PASS",
+      "expected": "20% off",
+      "actual": "20.0% off ($100.0\u2192$80.0)",
+      "evidence_id": "CHK-B-001",
+      "evidence_timestamp": "2026-11-27T09:05:00-05:00"
+    }
+  ],
+  "blockers": [],
+  "unverified_items": [
+    {
+      "check_id": "checkout_PROD-PILLOWCASE",
+      "product_id": "PROD-PILLOWCASE",
+      "reason": "Stale evidence at 2026-11-27T08:40:00-05:00; fresh checkout unavailable after retry. Cannot confirm current price."
+    }
+  ],
+  "activity_log": [
+    {
+      "action": "get_approved_offer",
+      "detail": "Fetching approved offer",
+      "result": "ok",
+      "timestamp": "2026-11-26T12:40:22.764153-05:00"
+    },
+    {
+      "action": "get_shopify_discount",
+      "detail": "Fetching Shopify discount settings",
+      "result": "ok",
+      "timestamp": "2026-11-26T12:40:22.764318-05:00"
+    },
+    {
+      "action": "get_klaviyo_campaign",
+      "detail": "Fetching Klaviyo email campaign",
+      "result": "ok",
+      "timestamp": "2026-11-26T12:40:22.764355-05:00"
+    },
+    {
+      "action": "get_checkout_observations",
+      "detail": "Fetching checkout data for rehearsal B",
+      "result": "ok",
+      "timestamp": "2026-11-26T12:40:22.764383-05:00"
+    },
+    {
+      "action": "request_fresh_checkout",
+      "detail": "Stale evidence for PROD-PILLOWCASE, requesting fresh check",
+      "result": "ok",
+      "timestamp": "2026-11-26T12:40:22.764437-05:00"
+    },
+    {
+      "action": "request_fresh_checkout",
+      "detail": "Attempt 1: Checkout service timed out for PROD-PILLOWCASE",
+      "result": "timeout",
+      "timestamp": "2026-11-26T12:40:22.764441-05:00"
+    },
+    {
+      "action": "request_fresh_checkout",
+      "detail": "Attempt 2: Checkout service timed out for PROD-PILLOWCASE",
+      "result": "timeout",
+      "timestamp": "2026-11-26T12:40:22.764443-05:00"
+    }
+  ],
+  "founder_approval_required": true,
+  "send_action_performed": false
+}

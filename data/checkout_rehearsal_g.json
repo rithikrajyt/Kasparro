@@ -1,0 +1,26 @@
+[
+  {
+    "source_system": "checkout",
+    "record_id": "CHK-G-001",
+    "checkout_id": "CHK-G-001",
+    "rehearsal": "G",
+    "product_id": "PROD-SLATE",
+    "product_name": "Slate Cotton Sheet Set",
+    "discount_code": "WEEKEND20",
+    "observed_at": "2026-11-27T09:05:00-05:00",
+    "before_price": 100.00,
+    "after_price": 80.00
+  },
+  {
+    "source_system": "checkout",
+    "record_id": "CHK-G-002",
+    "checkout_id": "CHK-G-002",
+    "rehearsal": "G",
+    "product_id": "PROD-SAND",
+    "product_name": "Sand Cotton Sheet Set",
+    "discount_code": "WEEKEND20",
+    "observed_at": "2026-11-27T09:06:00-05:00",
+    "before_price": 120.00,
+    "after_price": 96.00
+  }
+]

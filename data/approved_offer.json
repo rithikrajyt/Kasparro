@@ -1,0 +1,17 @@
+{
+  "source_system": "internal",
+  "record_id": "OFFER-001",
+  "offer_id": "WEEKEND20",
+  "updated_at": "2026-11-26T14:00:00-05:00",
+  "discount_code": "WEEKEND20",
+  "discount_percent": 20,
+  "eligible_products": [
+    {"product_id": "PROD-SLATE", "name": "Slate Cotton Sheet Set"},
+    {"product_id": "PROD-SAND", "name": "Sand Cotton Sheet Set"}
+  ],
+  "excluded_products": [
+    {"product_id": "PROD-PILLOWCASE", "name": "Pillowcase Set"}
+  ],
+  "promotion_start": "2026-11-27T09:00:00-05:00",
+  "promotion_end": "2026-11-29T23:59:00-05:00"
+}

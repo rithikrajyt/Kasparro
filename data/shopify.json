@@ -1,0 +1,18 @@
+{
+  "source_system": "shopify",
+  "record_id": "DISC-001",
+  "discount_id": "DISC-001",
+  "updated_at": "2026-11-26T16:00:00-05:00",
+  "discount_code": "WEEKEND20",
+  "discount_percent": 20,
+  "status": "active",
+  "eligible_products": [
+    {"product_id": "PROD-SLATE", "name": "Slate Cotton Sheet Set"},
+    {"product_id": "PROD-SAND", "name": "Sand Cotton Sheet Set"}
+  ],
+  "excluded_products": [
+    {"product_id": "PROD-PILLOWCASE", "name": "Pillowcase Set"}
+  ],
+  "starts_at": "2026-11-27T09:00:00-05:00",
+  "ends_at": "2026-11-29T23:59:00-05:00"
+}
