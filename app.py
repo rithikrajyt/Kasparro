@@ -111,6 +111,16 @@ with st.spinner("Running checks…"):
         simulate_failure=simulate_failure,
     )
 
+# ── Simulate-failure notice ──────────────────────────────────
+if simulate_failure:
+    timeout_events = [e for e in result["activity_log"] if e["result"] == "timeout"]
+    if not timeout_events:
+        st.warning(
+            "**Simulate failure** was checked but had no effect — all checkout evidence "
+            "in this rehearsal is already fresh, so no fresh-checkout request was needed.",
+            icon="⚡",
+        )
+
 # ── Recommendation Banner ───────────────────────────────────
 rec = result["recommendation"]
 banner_cfg = {
